@@ -6,6 +6,14 @@
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
+  "overrides": [
+    {
+      "files": ["*.test.js", "*.test.ts", "*.test.tsx"],
+      "env": {
+        "jest/globals": true
+      }
+    }
+  ],
   "plugins": ["@typescript-eslint"],
   "parserOptions": {
     "ecmaFeatures": {
@@ -16,7 +24,7 @@
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-plusplus": "off",
-    "react-native/no-inline-styles": "off",
-    "semi": 2
+    "react-native/no-inline-styles": "off"
+
   }
 }
