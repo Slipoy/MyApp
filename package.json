@@ -55,16 +55,16 @@
   "engines": {
     "node": ">=18"
   },
-  "lint-staged": {
-    "*js": [
-      "npm run lint:fix",
-      "git add"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint:fix",
+      "git add"
+    ]
   }
 
 }
