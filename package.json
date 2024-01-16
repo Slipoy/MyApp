@@ -55,11 +55,6 @@
   "engines": {
     "node": ">=18"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{ts,tsx}": [
       "npm run lint:fix",
