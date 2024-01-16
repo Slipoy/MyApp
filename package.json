@@ -36,7 +36,7 @@
     "@react-native/typescript-config": "^0.73.1",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.18.1",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^29.6.3",
@@ -61,5 +61,4 @@
       "git add"
     ]
   }
-
 }

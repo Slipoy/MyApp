@@ -16,7 +16,7 @@
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-plusplus": "off",
-    "react-native/no-inline-styles": "off"
-
+    "react-native/no-inline-styles": "off",
+    "semi": 2
   }
 }
