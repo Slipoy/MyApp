@@ -24,7 +24,7 @@ const Search = () => {
           `${item?.i?.name}(${item?.i?.type}) - ${item?.market}`.toLowerCase();
         return combinedString.includes(lowerCaseInput);
       });
-
+      console.log();
       const sortedData = filtered.sort((a, b) => {
         const countryA = a.market.toLowerCase();
         const countryB = b.market.toLowerCase();

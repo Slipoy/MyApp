@@ -14,6 +14,9 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "@typescript-eslint/explicit-module-boundary-types": "off"
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "semi": "error",
+    "no-plusplus": "off"
+
   }
 }
