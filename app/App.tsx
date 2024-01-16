@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 
 function App(): React.JSX.Element {
 
-    const name = "hallo"
+    const name = "hallo";
     return (
         <StocksProvider>
             <NavigationContainer>
