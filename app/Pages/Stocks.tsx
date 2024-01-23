@@ -1,10 +1,10 @@
-import React, {useContext} from 'react';
-import {View, StyleSheet, ActivityIndicator} from 'react-native';
-import {StocksContext} from '../context';
+import React, { useContext } from 'react';
+import { View, StyleSheet, ActivityIndicator } from 'react-native';
+import { StocksContext } from '../context';
 import StockList from '../components/StockList';
 
 const Stock = () => {
-  const {data} = useContext(StocksContext);
+  const { data } = useContext(StocksContext);
 
   return (
     <View style={styles.container}>

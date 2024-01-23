@@ -1,13 +1,13 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import {colorDetector} from '../utils/colorDetector';
-import {Item} from '../types/types';
+import { View, Text, StyleSheet } from 'react-native';
+import { colorDetector } from '../utils/colorDetector';
+import { Item } from '../types/types';
 
 interface StockItemProps {
   item: Item;
 }
 
-const StockItem: React.FC<StockItemProps> = ({item}) => {
+const StockItem: React.FC<StockItemProps> = ({ item }) => {
   const renderVarianceTag = (lastTradedPrevious: number, lotSize: string) => {
     const lotSizeValue = Number(lotSize);
     const lastTradedPreviousValue = Number(lastTradedPrevious);
@@ -25,7 +25,7 @@ const StockItem: React.FC<StockItemProps> = ({item}) => {
           padding: 5,
           width: 100,
         }}>
-        <Text style={{color: 'white'}} numberOfLines={1}>
+        <Text style={{ color: 'white' }} numberOfLines={1}>
           {resultValue}
         </Text>
       </View>

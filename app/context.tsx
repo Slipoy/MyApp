@@ -1,5 +1,5 @@
-import React, {createContext, useEffect, useState} from 'react';
-import {Item} from './types/types';
+import React, { createContext, useEffect, useMemo, useState } from 'react';
+import { Item } from './types/types';
 
 interface StocksContextProps {
   data: Item[] | null;
@@ -7,9 +7,9 @@ interface StocksContextProps {
 }
 const StocksContext = createContext<StocksContextProps | undefined>(undefined);
 
-const StocksProvider = ({children}) => {
+const StocksProvider = ({ children }) => {
   const [data, setData] = useState<Item[] | null>(null);
-
+  const contextValue = useMemo(() => ({ data, setData }), [data, setData]);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -26,10 +26,10 @@ const StocksProvider = ({children}) => {
   }, []);
 
   return (
-    <StocksContext.Provider value={{data, setData}}>
+    <StocksContext.Provider value={contextValue}>
       {children}
     </StocksContext.Provider>
   );
 };
 
-export {StocksProvider, StocksContext};
+export { StocksProvider, StocksContext };

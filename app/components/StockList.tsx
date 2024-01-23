@@ -1,13 +1,13 @@
 import React from 'react';
 import StockItem from './StockItem';
-import {FlatList} from 'react-native';
-import {Item} from '../types/types';
+import { FlatList } from 'react-native';
+import { Item } from '../types/types';
 
 interface StockListProps {
   listData: Item[];
 }
 
-const StockList: React.FC<StockListProps> = ({listData}) => {
+const StockList: React.FC<StockListProps> = ({ listData }) => {
   return (
     <>
       <FlatList

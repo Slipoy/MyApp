@@ -1,12 +1,12 @@
-import React, {useCallback, useContext, useState} from 'react';
-import {View, StyleSheet} from 'react-native';
-import {useDebouncedCallback} from 'use-debounce';
-import {StocksContext} from '../context';
+import React, { useCallback, useContext, useState } from 'react';
+import { View, StyleSheet } from 'react-native';
+import { useDebouncedCallback } from 'use-debounce';
+import { StocksContext } from '../context';
 import StockList from '../components/StockList';
 import SearchInput from '../components/SearchInput';
 
 const Search = () => {
-  const {data} = useContext(StocksContext);
+  const { data } = useContext(StocksContext);
   const [inputText, setInputText] = useState('');
 
   const [filteredData, setFilteredData] = useState(null);

@@ -1,8 +1,8 @@
 import React from 'react';
-import {View, StyleSheet, TextInput} from 'react-native';
+import { View, StyleSheet, TextInput } from 'react-native';
 import SearchIcon from '../assets/SearchIcon';
 
-const SearchInput = ({value, onChangeText}) => {
+const SearchInput = ({ value, onChangeText }) => {
   return (
     <View
       style={{

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Svg, {Path} from 'react-native-svg';
-import {useIsFocused} from '@react-navigation/native';
+import Svg, { Path } from 'react-native-svg';
+import { useIsFocused } from '@react-navigation/native';
 
 function SvgComponent() {
   const isFocused = useIsFocused();
